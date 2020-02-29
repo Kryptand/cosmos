@@ -1,0 +1,20 @@
+<kryptand-crud-container
+  [fieldConfig]="fieldConfig"
+  [persistorInstance]="threadRegionPersistor"
+  [templateRef]="templateRef"
+  backRef="tabs/configuration"
+  title="Faden - Regionen"
+>
+</kryptand-crud-container>
+<ng-template #templateRef let-entity>
+  <ion-item
+  >Titel:
+    <ion-chip color="primary" outline="true">
+      <ion-label> {{ entity?.title }}</ion-label>
+    </ion-chip>
+    &nbsp; &nbsp;Vorgeschlagene Menge:
+    <ion-chip color="primary" outline="true">
+      <ion-label> {{ entity?.suggestedAmount }}</ion-label>
+    </ion-chip>
+  </ion-item>
+</ng-template>

@@ -1,0 +1,23 @@
+<form [formGroup]="treatmentForm">
+  <ion-item>
+    <ion-label position="floating">Bezeichnung</ion-label>
+    <ion-input
+      autofocus
+      formControlName="label"
+      required
+      type="text"
+    ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Datum</ion-label>
+    <ion-input formControlName="date" type="date"></ion-input>
+  </ion-item>
+  <ion-button
+    (click)="save()"
+    [disabled]="!treatmentForm.valid"
+    color="primary"
+    expand="block"
+  >Speichern
+  </ion-button
+  >
+</form>

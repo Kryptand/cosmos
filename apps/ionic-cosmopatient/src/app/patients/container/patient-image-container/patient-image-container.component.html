@@ -1,0 +1,26 @@
+<ion-button (click)="uploadFromCamera()">
+  Bild hochladen
+  <ion-icon name="arrow-up" slot="end"></ion-icon>
+</ion-button>
+
+<ng-container *ngIf="images$ | async">
+  <div class="images">
+    <div *ngFor="let photo of images$ | async" class="one-image">
+      <kryptand-patient-image
+        (photoDeleteEventTriggered)="deletePhoto($event)"
+        (photoSelectEventTriggered)="selectPhoto($event)"
+        [photo]="photo"
+        [selected]="isPhotoIncluded(photo)"
+      ></kryptand-patient-image>
+    </div>
+  </div>
+</ng-container>
+<div id="web-upload" style="display: none;">
+  <input
+    #upload
+    (change)="uploadImage(uploadElement.nativeElement.files)"
+    accept="image/x-png,image/jpeg"
+    id="upload"
+    type="file"
+  />
+</div>

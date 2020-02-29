@@ -7,5 +7,95 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
-  "projects": {}
+  "projects": {
+    "ionic-cosmopatient": {
+      "tags": []
+    },
+    "cosmopatient-patient-feature-patient-management": {
+      "tags": [
+        "patient",
+        "feature"
+      ]
+    },
+    "cosmopatient-patient-feature-treatment-comparison": {
+      "tags": [
+        "patient",
+        "feature"
+      ]
+    },
+    "cosmopatient-patient-feature-image-comparison": {
+      "tags": [
+        "patient",
+        "feature"
+      ]
+    },
+    "cosmopatient-botox-feature-treatment": {
+      "tags": [
+        "botox",
+        "feature"
+      ]
+    },
+    "cosmopatient-botox-feature-region": {
+      "tags": [
+        "botox",
+        "feature"
+      ]
+    },
+    "cosmopatient-botox-feature-type": {
+      "tags": [
+        "botox",
+        "feature"
+      ]
+    },
+    "cosmopatient-thread-feature-region": {
+      "tags": [
+        "thread",
+        "feature"
+      ]
+    },
+    "cosmopatient-thread-feature-type": {
+      "tags": [
+        "thread",
+        "feature"
+      ]
+    },
+    "cosmopatient-thread-feature-treatment": {
+      "tags": [
+        "thread",
+        "feature"
+      ]
+    },
+    "cosmopatient-billing-feature-treatment-invoice": {
+      "tags": [
+        "billing",
+        "feature"
+      ]
+    },
+    "cosmopatient-system-feature-import-export": {
+      "tags": [
+        "system",
+        "feature"
+      ]
+    },
+    "cosmopatient-shared-ui-common": {
+      "tags": [
+        "shared",
+        "ui",
+        "common"
+      ]
+    },
+    "cosmopatient-shared-domain": {
+      "tags": [
+        "shared",
+        "domain"
+      ]
+    },
+    "cosmopatient-shared-ui-formly-extension": {
+      "tags": [
+        "shared",
+        "ui",
+        "formly-extension"
+      ]
+    }
+  }
 }

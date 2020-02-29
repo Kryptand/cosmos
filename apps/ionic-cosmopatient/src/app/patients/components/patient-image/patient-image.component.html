@@ -1,0 +1,16 @@
+<div class="image">
+  <div class="title">{{ formattedDateString }}</div>
+  <div [class.selected]="selected" class="photo">
+    <ion-button *ngIf="selected" class="image-button-left" color="secondary">
+      <ion-icon name="checkbox-outline" slot="icon-only"></ion-icon>
+    </ion-button>
+    <ion-button
+      (click)="deletePhoto()"
+      *ngIf="!withoutButtons"
+      class="image-button"
+    >
+      <ion-icon name="close" slot="icon-only"></ion-icon>
+    </ion-button>
+    <img (click)="selectPhoto()" [src]="photo.content"/>
+  </div>
+</div>

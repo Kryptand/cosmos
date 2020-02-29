@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/patients"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Patienten
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ng-container *ngFor="let treatment of treatments$ | async">
+      <kryptand-patient-treatment
+        (deleteEventTriggered)="delete($event)"
+        (editEventTriggered)="edit($event)"
+        [patientId]="patientId"
+        [treatment]="treatment"
+      ></kryptand-patient-treatment>
+    </ng-container>
+  </ion-list>
+  <ion-fab (click)="create()" horizontal="end" vertical="bottom">
+    <ion-fab-button color="primary"
+    >
+      <ion-icon name="add"></ion-icon
+      >
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+<ng-template #templateRef let-entity>
+  <ion-item
+  >Titel:
+    <ion-chip color="primary" outline="true">
+      <ion-label> {{ entity?.title }}</ion-label>
+    </ion-chip>
+    &nbsp; &nbsp;Preis pro Einheit:
+    <ion-chip color="primary" outline="true">
+      <ion-label> {{ entity?.pricePerUnit }}</ion-label>
+    </ion-chip>
+  </ion-item>
+</ng-template>

@@ -1,0 +1,8 @@
+{
+  "name": "cosmosurge",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

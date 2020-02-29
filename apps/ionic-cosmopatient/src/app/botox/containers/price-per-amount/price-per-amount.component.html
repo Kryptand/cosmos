@@ -1,0 +1,21 @@
+<ion-card>
+  <ion-card-header>
+    Preis pro Einheit
+  </ion-card-header>
+  <ion-card-content>
+    <ion-item>
+      <ion-input
+        [formControl]="pricePerAmountField"
+        autofocus
+        type="text"
+      ></ion-input>
+    </ion-item>
+    <ion-button
+      (click)="save()"
+      color="primary"
+      expand="block"
+    >Speichern
+    </ion-button
+    >
+  </ion-card-content>
+</ion-card>

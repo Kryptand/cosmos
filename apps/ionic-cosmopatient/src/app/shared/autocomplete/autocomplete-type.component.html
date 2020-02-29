@@ -1,0 +1,29 @@
+<ion-item [lines]="to.itemLines">
+  <ion-label [position]="to.labelPosition">
+    {{ to.label }}
+    <span *ngIf="to.required && to.hideRequiredMarker !== true">*</span>
+  </ion-label>
+  <input
+    [formControl]="formControl"
+    [formlyAttributes]="field"
+    [matAutocomplete]="auto"
+    [placeholder]="to.placeholder"
+    autocomplete="no"
+    class="native-input sc-ion-input-md sc-ion-input-md-h sc-ion-input-md-s md h"
+    matInput
+  />
+  <mat-autocomplete #auto="matAutocomplete">
+    <mat-option *ngFor="let value of filter | async" [value]="value">
+      {{ value }}
+    </mat-option>
+  </mat-autocomplete>
+</ion-item>
+<ion-item *ngIf="showError" lines="none">
+  <ion-label>
+    <ion-text color="danger">
+      <p>
+        <formly-validation-message [field]="field"></formly-validation-message>
+      </p>
+    </ion-text>
+  </ion-label>
+</ion-item>

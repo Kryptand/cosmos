@@ -1,12 +1,15 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "module": "es2015",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es5",
+    "target": "es2015",
     "typeRoots": [
       "node_modules/@types"
     ],
@@ -16,7 +19,50 @@
     ],
     "baseUrl": ".",
     "paths": {
-    }
+      "@kryptand/cosmopatient/patient/feature-patient-management": [
+        "libs/cosmopatient/patient/feature-patient-management/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/patient/feature-treatment-comparison": [
+        "libs/cosmopatient/patient/feature-treatment-comparison/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/patient/feature-image-comparison": [
+        "libs/cosmopatient/patient/feature-image-comparison/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/botox/feature-treatment": [
+        "libs/cosmopatient/botox/feature-treatment/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/botox/feature-region": [
+        "libs/cosmopatient/botox/feature-region/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/botox/feature-type": [
+        "libs/cosmopatient/botox/feature-type/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/thread/feature-region": [
+        "libs/cosmopatient/thread/feature-region/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/thread/feature-type": [
+        "libs/cosmopatient/thread/feature-type/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/thread/feature-treatment": [
+        "libs/cosmopatient/thread/feature-treatment/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/billing/feature-treatment-invoice": [
+        "libs/cosmopatient/billing/feature-treatment-invoice/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/system/feature-import-export": [
+        "libs/cosmopatient/system/feature-import-export/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/shared/ui-common": [
+        "libs/cosmopatient/shared/ui-common/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/shared/domain": [
+        "libs/cosmopatient/shared/domain/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/shared/ui-formly-extension": [
+        "libs/cosmopatient/shared/ui-formly-extension/src/index.ts"
+      ]
+    },
+    "rootDir": "."
   },
   "exclude": [
     "node_modules",
