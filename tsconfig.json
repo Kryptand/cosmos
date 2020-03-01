@@ -3,7 +3,7 @@
   "compilerOptions": {
     "downlevelIteration": true,
     "importHelpers": true,
-    "module": "es2015",
+    "module": "esnext",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
@@ -60,6 +60,36 @@
       ],
       "@kryptand/cosmopatient/shared/ui-formly-extension": [
         "libs/cosmopatient/shared/ui-formly-extension/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/billing/api": [
+        "libs/cosmopatient/billing/api/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/botox/api": [
+        "libs/cosmopatient/botox/api/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/patient/api": [
+        "libs/cosmopatient/patient/api/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/thread/api": [
+        "libs/cosmopatient/thread/api/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/botox/domain": [
+        "libs/cosmopatient/botox/domain/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/botox/shell": [
+        "libs/cosmopatient/botox/shell/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/thread/domain": [
+        "libs/cosmopatient/thread/domain/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/thread/shell": [
+        "libs/cosmopatient/thread/shell/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/patient/shell": [
+        "libs/cosmopatient/patient/shell/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/patient/domain": [
+        "libs/cosmopatient/patient/domain/src/index.ts"
       ]
     },
     "rootDir": "."

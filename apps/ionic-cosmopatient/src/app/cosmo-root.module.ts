@@ -12,7 +12,6 @@ import { FormlyModule } from '@ngx-formly/core';
 import { FormlyIonicModule } from '@ngx-formly/ionic';
 import { CosmoShellComponent } from './cosmosurge-shell.component';
 import { CosmoRoutingModule } from './cosmo-routing.module';
-
 @NgModule({
   declarations: [CosmoShellComponent],
   entryComponents: [],

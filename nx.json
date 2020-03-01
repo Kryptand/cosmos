@@ -9,92 +9,180 @@
   },
   "projects": {
     "ionic-cosmopatient": {
-      "tags": []
+      "tags": [
+        "domain:app",
+        "type:app",
+        "application:cosmopatient"
+      ]
     },
     "cosmopatient-patient-feature-patient-management": {
       "tags": [
-        "patient",
-        "feature"
+        "application:cosmopatient",
+        "domain:patient",
+        "type:feature"
       ]
     },
     "cosmopatient-patient-feature-treatment-comparison": {
       "tags": [
-        "patient",
-        "feature"
+        "application:cosmopatient",
+        "domain:patient",
+        "type:feature"
       ]
     },
     "cosmopatient-patient-feature-image-comparison": {
       "tags": [
-        "patient",
-        "feature"
+        "application:cosmopatient",
+        "domain:patient",
+        "type:feature"
       ]
     },
     "cosmopatient-botox-feature-treatment": {
       "tags": [
-        "botox",
-        "feature"
+        "application:cosmopatient",
+        "domain:botox",
+        "type:feature"
       ]
     },
     "cosmopatient-botox-feature-region": {
       "tags": [
-        "botox",
-        "feature"
+        "application:cosmopatient",
+        "domain:botox",
+        "type:feature"
       ]
     },
     "cosmopatient-botox-feature-type": {
       "tags": [
-        "botox",
-        "feature"
+        "application:cosmopatient",
+        "domain:botox",
+        "type:feature"
       ]
     },
     "cosmopatient-thread-feature-region": {
       "tags": [
-        "thread",
-        "feature"
+        "application:cosmopatient",
+        "domain:thread",
+        "type:feature"
       ]
     },
     "cosmopatient-thread-feature-type": {
       "tags": [
-        "thread",
-        "feature"
+        "application:cosmopatient",
+        "domain:thread",
+        "type:feature"
       ]
     },
     "cosmopatient-thread-feature-treatment": {
       "tags": [
-        "thread",
-        "feature"
+        "application:cosmopatient",
+        "domain:thread",
+        "type:feature"
       ]
     },
     "cosmopatient-billing-feature-treatment-invoice": {
       "tags": [
-        "billing",
-        "feature"
+        "application:cosmopatient",
+        "domain:billing",
+        "type:feature"
       ]
     },
     "cosmopatient-system-feature-import-export": {
       "tags": [
-        "system",
-        "feature"
+        "application:cosmopatient",
+        "domain:system",
+        "type:feature"
       ]
     },
     "cosmopatient-shared-ui-common": {
       "tags": [
-        "shared",
-        "ui",
-        "common"
+        "application:cosmopatient",
+        "domain:shared",
+        "type:ui",
+        "domain:shared/common"
       ]
     },
     "cosmopatient-shared-domain": {
       "tags": [
-        "shared",
-        "domain"
+        "application:cosmopatient",
+        "domain:shared",
+        "type:domain-logic"
       ]
     },
     "cosmopatient-shared-ui-formly-extension": {
       "tags": [
-        "shared",
-        "ui",
+        "application:cosmopatient",
+        "domain:shared",
+        "type:ui",
         "formly-extension"
+      ]
+    },
+    "cosmopatient-billing-api": {
+      "tags": [
+        "application:cosmopatient",
+        "domain:billing",
+        "type:api"
+      ]
+    },
+    "cosmopatient-botox-api": {
+      "tags": [
+        "application:cosmopatient",
+        "domain:botox",
+        "type:api"
+      ]
+    },
+    "cosmopatient-patient-api": {
+      "tags": [
+        "application:cosmopatient",
+        "domain:patient",
+        "type:api"
+      ]
+    },
+    "cosmopatient-thread-api": {
+      "tags": [
+        "application:cosmopatient",
+        "domain:thread",
+        "type:api"
+      ]
+    },
+    "cosmopatient-botox-domain": {
+      "tags": [
+        "application:cosmopatient",
+        "domain:botox",
+        "type:domain-logic"
+      ]
+    },
+    "cosmopatient-botox-shell": {
+      "tags": [
+        "application:cosmopatient",
+        "domain:botox",
+        "type:shell"
+      ]
+    },
+    "cosmopatient-thread-domain": {
+      "tags": [
+        "application:cosmopatient",
+        "domain:thread",
+        "type:domain-logic"
+      ]
+    },
+    "cosmopatient-thread-shell": {
+      "tags": [
+        "application:cosmopatient",
+        "domain:thread",
+        "type:shell"
+      ]
+    },
+    "cosmopatient-patient-domain": {
+      "tags": [
+        "application:cosmopatient",
+        "domain:patient",
+        "type:domain-logic"
+      ]
+    },
+    "cosmopatient-patient-shell": {
+      "tags": [
+        "application:cosmopatient",
+        "domain:patient",
+        "type:shell"
       ]
     }
   }

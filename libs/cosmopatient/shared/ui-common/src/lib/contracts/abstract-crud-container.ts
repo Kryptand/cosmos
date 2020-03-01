@@ -1,10 +1,12 @@
 import { BehaviorSubject } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 
-import { AbstractPersistor } from '../util/abstract-persistor';
-import { openOverlayAndEmitResult } from '../util/open-overlay';
 import { PopoverController } from '@ionic/angular';
 import { Input, Type } from '@angular/core';
+import {
+  AbstractPersistor,
+  openOverlayAndEmitResult
+} from '@kryptand/cosmopatient/shared/domain';
 
 export abstract class AbstractCrudContainer<T> {
   refresh$ = new BehaviorSubject(undefined);
@@ -37,7 +39,11 @@ export abstract class AbstractCrudContainer<T> {
     component: Type<any>,
     currentValue?: any
   ): Promise<void> {
-    const formResult = await openOverlayAndEmitResult(popoverController, component, overlayProps);
+    const formResult = await openOverlayAndEmitResult(
+      popoverController,
+      component,
+      overlayProps
+    );
     return this.handleOverlayResult(formResult, currentValue);
   }
 

@@ -95,9 +95,33 @@
         "allow": [],
         "depConstraints": [
           {
-            "sourceTag": "*",
+            "sourceTag": "domain:app",
             "onlyDependOnLibsWithTags": [
-              "*"
+              "domain:botox",
+              "domain:patient",
+              "domain:billing",
+              "domain:system",
+              "domain:thread"
+            ]
+          },
+          {
+            "sourceTag": "domain:botox",
+            "onlyDependOnLibsWithTags": [
+              "domain:shared"
+            ]
+          },
+          {
+            "sourceTag": "domain:thread",
+            "onlyDependOnLibsWithTags": [
+              "domain:shared"
+            ]
+          },
+          {
+            "sourceTag": "domain:patient",
+            "onlyDependOnLibsWithTags": [
+              "domain:shared",
+              "domain:botox/api",
+              "domain:thread/api"
             ]
           }
         ]

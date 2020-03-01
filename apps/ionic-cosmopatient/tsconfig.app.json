@@ -5,7 +5,9 @@
     "types": []
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "../../libs/cosmopatient/botox/shell/src/index.ts",
+    "../../libs/cosmopatient/thread/shell/src/index.ts"
   ],
   "exclude": [
     "src/test.ts",

@@ -16,12 +16,16 @@ import { ImportExportService } from '../patients/services/export-import.service'
       {
         path: 'botox',
         loadChildren: () =>
-          import('./../botox/botox.module').then(m => m.BotoxModule)
+          import('@kryptand/cosmopatient/botox/shell').then(
+            m => m.CosmopatientBotoxShellModule
+          )
       },
       {
         path: 'thread',
         loadChildren: () =>
-          import('./../thread/thread.module').then(m => m.ThreadModule)
+          import('@kryptand/cosmopatient/thread/shell').then(
+            m => m.CosmopatientThreadShellModule
+          )
       }
     ])
   ],

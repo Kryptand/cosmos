@@ -593,6 +593,296 @@
         }
       },
       "schematics": {}
+    },
+    "cosmopatient-billing-api": {
+      "projectType": "library",
+      "root": "libs/cosmopatient/billing/api",
+      "sourceRoot": "libs/cosmopatient/billing/api/src",
+      "prefix": "kryptand",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/cosmopatient/billing/api/tsconfig.lib.json",
+              "libs/cosmopatient/billing/api/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/cosmopatient/billing/api/jest.config.js",
+            "tsConfig": "libs/cosmopatient/billing/api/tsconfig.spec.json",
+            "setupFile": "libs/cosmopatient/billing/api/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "cosmopatient-botox-api": {
+      "projectType": "library",
+      "root": "libs/cosmopatient/botox/api",
+      "sourceRoot": "libs/cosmopatient/botox/api/src",
+      "prefix": "kryptand",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/cosmopatient/botox/api/tsconfig.lib.json",
+              "libs/cosmopatient/botox/api/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/cosmopatient/botox/api/jest.config.js",
+            "tsConfig": "libs/cosmopatient/botox/api/tsconfig.spec.json",
+            "setupFile": "libs/cosmopatient/botox/api/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "cosmopatient-patient-api": {
+      "projectType": "library",
+      "root": "libs/cosmopatient/patient/api",
+      "sourceRoot": "libs/cosmopatient/patient/api/src",
+      "prefix": "kryptand",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/cosmopatient/patient/api/tsconfig.lib.json",
+              "libs/cosmopatient/patient/api/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/cosmopatient/patient/api/jest.config.js",
+            "tsConfig": "libs/cosmopatient/patient/api/tsconfig.spec.json",
+            "setupFile": "libs/cosmopatient/patient/api/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "cosmopatient-thread-api": {
+      "projectType": "library",
+      "root": "libs/cosmopatient/thread/api",
+      "sourceRoot": "libs/cosmopatient/thread/api/src",
+      "prefix": "kryptand",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/cosmopatient/thread/api/tsconfig.lib.json",
+              "libs/cosmopatient/thread/api/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/cosmopatient/thread/api/jest.config.js",
+            "tsConfig": "libs/cosmopatient/thread/api/tsconfig.spec.json",
+            "setupFile": "libs/cosmopatient/thread/api/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "cosmopatient-botox-domain": {
+      "projectType": "library",
+      "root": "libs/cosmopatient/botox/domain",
+      "sourceRoot": "libs/cosmopatient/botox/domain/src",
+      "prefix": "kryptand",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/cosmopatient/botox/domain/tsconfig.lib.json",
+              "libs/cosmopatient/botox/domain/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/cosmopatient/botox/domain/jest.config.js",
+            "tsConfig": "libs/cosmopatient/botox/domain/tsconfig.spec.json",
+            "setupFile": "libs/cosmopatient/botox/domain/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "cosmopatient-botox-shell": {
+      "projectType": "library",
+      "root": "libs/cosmopatient/botox/shell",
+      "sourceRoot": "libs/cosmopatient/botox/shell/src",
+      "prefix": "kryptand",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/cosmopatient/botox/shell/tsconfig.lib.json",
+              "libs/cosmopatient/botox/shell/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/cosmopatient/botox/shell/jest.config.js",
+            "tsConfig": "libs/cosmopatient/botox/shell/tsconfig.spec.json",
+            "setupFile": "libs/cosmopatient/botox/shell/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "cosmopatient-thread-domain": {
+      "projectType": "library",
+      "root": "libs/cosmopatient/thread/domain",
+      "sourceRoot": "libs/cosmopatient/thread/domain/src",
+      "prefix": "kryptand",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/cosmopatient/thread/domain/tsconfig.lib.json",
+              "libs/cosmopatient/thread/domain/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/cosmopatient/thread/domain/jest.config.js",
+            "tsConfig": "libs/cosmopatient/thread/domain/tsconfig.spec.json",
+            "setupFile": "libs/cosmopatient/thread/domain/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "cosmopatient-thread-shell": {
+      "projectType": "library",
+      "root": "libs/cosmopatient/thread/shell",
+      "sourceRoot": "libs/cosmopatient/thread/shell/src",
+      "prefix": "kryptand",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/cosmopatient/thread/shell/tsconfig.lib.json",
+              "libs/cosmopatient/thread/shell/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/cosmopatient/thread/shell/jest.config.js",
+            "tsConfig": "libs/cosmopatient/thread/shell/tsconfig.spec.json",
+            "setupFile": "libs/cosmopatient/thread/shell/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "cosmopatient-patient-shell": {
+      "projectType": "library",
+      "root": "libs/cosmopatient/patient/shell",
+      "sourceRoot": "libs/cosmopatient/patient/shell/src",
+      "prefix": "kryptand",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/cosmopatient/patient/shell/tsconfig.lib.json",
+              "libs/cosmopatient/patient/shell/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/cosmopatient/patient/shell/jest.config.js",
+            "tsConfig": "libs/cosmopatient/patient/shell/tsconfig.spec.json",
+            "setupFile": "libs/cosmopatient/patient/shell/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "cosmopatient-patient-domain": {
+      "projectType": "library",
+      "root": "libs/cosmopatient/patient/domain",
+      "sourceRoot": "libs/cosmopatient/patient/domain/src",
+      "prefix": "kryptand",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/cosmopatient/patient/domain/tsconfig.lib.json",
+              "libs/cosmopatient/patient/domain/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/cosmopatient/patient/domain/jest.config.js",
+            "tsConfig": "libs/cosmopatient/patient/domain/tsconfig.spec.json",
+            "setupFile": "libs/cosmopatient/patient/domain/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {
