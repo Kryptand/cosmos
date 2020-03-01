@@ -184,6 +184,13 @@
         "domain:patient",
         "type:shell"
       ]
+    },
+    "cosmopatient-identity-domain": {
+      "tags": [
+        "application:cosmopatient",
+        "domain:identity",
+        "type:domain-logic"
+      ]
     }
   }
 }

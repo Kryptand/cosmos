@@ -883,6 +883,35 @@
         }
       },
       "schematics": {}
+    },
+    "cosmopatient-identity-domain": {
+      "projectType": "library",
+      "root": "libs/cosmopatient/identity/domain",
+      "sourceRoot": "libs/cosmopatient/identity/domain/src",
+      "prefix": "kryptand",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/cosmopatient/identity/domain/tsconfig.lib.json",
+              "libs/cosmopatient/identity/domain/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/cosmopatient/identity/domain/jest.config.js",
+            "tsConfig": "libs/cosmopatient/identity/domain/tsconfig.spec.json",
+            "setupFile": "libs/cosmopatient/identity/domain/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {

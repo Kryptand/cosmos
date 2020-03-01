@@ -90,6 +90,12 @@
       ],
       "@kryptand/cosmopatient/patient/domain": [
         "libs/cosmopatient/patient/domain/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/identity": [
+        "libs/cosmopatient/identity/src/index.ts"
+      ],
+      "@kryptand/cosmopatient/identity/domain": [
+        "libs/cosmopatient/identity/domain/src/index.ts"
       ]
     },
     "rootDir": "."
